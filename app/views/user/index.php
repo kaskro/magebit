@@ -22,8 +22,7 @@
                         <field caption="Password" id="signup-password" name="password" type="password" icon="password" error="" default=""></field>
                     </div>
                     <div class="form-footer">
-                        <input name="signup_token_field" type="hidden" value="
-							<?php echo $token;  ?>" />
+                        <input name="signup_token_field" type="hidden" value="<?php echo $token; ?>" />
                         <button class="button orange" type="submit">SIGN UP</button>
                     </div>
                 </form>
@@ -50,8 +49,7 @@
                     </div>
                     <div class="form-footer">
                         <div class="d-flex space-between">
-                            <input name="login_token_field" type="hidden" value="
-									<?php echo $token ?>" />
+                            <input name="login_token_field" type="hidden" value="<?php echo $token; ?>" />
                             <button class="button orange" type="submit">LOGIN</button>
                             <button class="button white" type="button">Forgot?</button>
                         </div>
