@@ -45,27 +45,22 @@
                         <hr />
                     </div>
                     <div class="form-content">
-                        <field caption="Email" id="login-email" name="email" type="email" icon="email" error="
-								<?php if (isset($errors["email"])) {
-                                    echo ucFirst($errors["email"]);
-                                } ?>" default="
-								<?php if (isset($post["email"])) {
-                                    echo $post["email"];
-                                } ?>">
+                        <field caption="Email" id="login-email" name="email" type="email" icon="email" error="<?php if (isset($errors["email"])) {
+                                                                                                                    echo ucFirst($errors["email"]);
+                                                                                                                } ?>" default="<?php if (isset($post["email"])) {
+                                                                                                                                    echo $post["email"];
+                                                                                                                                } ?>">
                         </field>
-                        <field caption="Password" id="login-password" name="password" type="password" icon="password" error="
-								<?php if (isset($errors["password"])) {
-                                    echo ucFirst($errors["password"]);
-                                } ?>" default="
-								<?php if (isset($post["password"])) {
-                                    echo $post["password"];
-                                } ?>" default="">
+                        <field caption="Password" id="login-password" name="password" type="password" icon="password" error="<?php if (isset($errors["password"])) {
+                                                                                                                                    echo ucFirst($errors["password"]);
+                                                                                                                                } ?>" default="<?php if (isset($post["password"])) {
+                                                                                                                                                    echo $post["password"];
+                                                                                                                                                } ?>" default="">
                         </field>
                     </div>
                     <div class="form-footer">
                         <div class="d-flex space-between">
-                            <input name="login_token_field" type="hidden" value="
-									<?php echo $token ?>" />
+                            <input name="login_token_field" type="hidden" value="<?php echo $token ?>" />
                             <button class="button orange" type="submit">LOGIN</button>
                             <button class="button white" type="button">Forgot?</button>
                         </div>

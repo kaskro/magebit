@@ -20,22 +20,22 @@
                     <ul>
                         <li>
                             <field caption="Fullname" id="fullnamne" name="fullname" type="text" icon="user" error="<?php if (isset($errors["fullname"])) {
-                                    echo ucFirst($errors["fullname"]);
-                                } ?>" default="<?php if (isset($post["fullname"])) {
-                                    echo $post["fullname"];
-                                } else {
-                                    echo $user->fullname;
-                                } ?>">
+                                                                                                                        echo ucFirst($errors["fullname"]);
+                                                                                                                    } ?>" default="<?php if (isset($post["fullname"])) {
+                                                                                                                                        echo $post["fullname"];
+                                                                                                                                    } else {
+                                                                                                                                        echo $user->fullname;
+                                                                                                                                    } ?>">
                             </field>
                         </li>
                         <li>
                             <field caption="Email" id="email" name="email" type="text" icon="email" error="<?php if (isset($errors["email"])) {
-                                    echo ucFirst($errors["email"]);
-                                } ?>" default="<?php if (isset($post["email"])) {
-                                    echo $post["email"];
-                                } else {
-                                    echo $user->email;
-                                } ?>">
+                                                                                                                echo ucFirst($errors["email"]);
+                                                                                                            } ?>" default="<?php if (isset($post["email"])) {
+                                                                                                                                echo $post["email"];
+                                                                                                                            } else {
+                                                                                                                                echo $user->email;
+                                                                                                                            } ?>">
                             </field>
                         </li>
                         <li>
@@ -52,8 +52,7 @@
                     </ul>
                 </div>
                 <div class="form-footer">
-                    <input name="update_token_field" type="hidden" value="
-						<?php echo $token;  ?>" />
+                    <input name="update_token_field" type="hidden" value="<?php echo $token;  ?>" />
                     <button class="button orange" type="submit">UPDATE</button>
                 </div>
             </form>

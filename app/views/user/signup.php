@@ -17,34 +17,27 @@
                         <hr />
                     </div>
                     <div class="form-content">
-                        <field caption="Name" id="signup-name" name="fullname" type="text" icon="user" error="
-							<?php if (isset($errors["fullname"])) {
-                                echo ucFirst($errors["fullname"]);
-                            } ?>" default="
-							<?php if (isset($post["fullname"])) {
-                                echo ucFirst($post["fullname"]);
-                            } ?>">
+                        <field caption="Name" id="signup-name" name="fullname" type="text" icon="user" error="<?php if (isset($errors["fullname"])) {
+                                                                                                                    echo ucFirst($errors["fullname"]);
+                                                                                                                } ?>" default="<?php if (isset($post["fullname"])) {
+                                                                                                                                    echo ucFirst($post["fullname"]);
+                                                                                                                                } ?>">
                         </field>
-                        <field caption="Email" id="signup-email" name="email" type="email" icon="email" error="
-							<?php if (isset($errors["email"])) {
-                                echo ucFirst($errors["email"]);
-                            } ?>" default="
-							<?php if (isset($post["email"])) {
-                                echo $post["email"];
-                            } ?>">
+                        <field caption="Email" id="signup-email" name="email" type="email" icon="email" error="<?php if (isset($errors["email"])) {
+                                                                                                                    echo ucFirst($errors["email"]);
+                                                                                                                } ?>" default="<?php if (isset($post["email"])) {
+                                                                                                                                    echo $post["email"];
+                                                                                                                                } ?>">
                         </field>
-                        <field caption="Password" id="signup-password" name="password" type="password" icon="password" error="
-							<?php if (isset($errors["password"])) {
-                                echo ucFirst($errors["password"]);
-                            } ?>" default="
-							<?php if (isset($post["password"])) {
-                                echo $post["password"];
-                            } ?>">
+                        <field caption="Password" id="signup-password" name="password" type="password" icon="password" error="<?php if (isset($errors["password"])) {
+                                                                                                                                    echo ucFirst($errors["password"]);
+                                                                                                                                } ?>" default="<?php if (isset($post["password"])) {
+                                                                                                                                                    echo $post["password"];
+                                                                                                                                                } ?>">
                         </field>
                     </div>
                     <div class="form-footer">
-                        <input name="signup_token_field" type="hidden" value="
-							<?php echo $token;  ?>" />
+                        <input name="signup_token_field" type="hidden" value="<?php echo $token;  ?>" />
                         <button class="button orange" type="submit">SIGN UP</button>
                     </div>
                 </form>
@@ -71,8 +64,7 @@
                     </div>
                     <div class="form-footer">
                         <div class="d-flex space-between">
-                            <input name="login_token_field" type="hidden" value="
-									<?php echo $token ?>" />
+                            <input name="login_token_field" type="hidden" value="<?php echo $token ?>" />
                             <button class="button orange" type="submit">LOGIN</button>
                             <button class="button white" type="button">Forgot?</button>
                         </div>
